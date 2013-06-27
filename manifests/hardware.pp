@@ -5,6 +5,8 @@ class raidtool::hardware {
     /Adaptec Series/:   { include raidtool::hardware::aac }
     /3ware/:            { include raidtool::hardware::threeware }
     /LSI/:              { include raidtool::hardware::lsi }
-    default:            { err "unsupported raid controller: $raidcontroller" }
+    /Hewlett/:          { include raidtool::hardware::hp }
+    /Compaq/:           { include raidtool::hardware::hp }
+    default:            { notice "Unsupported raid controller: $::raidcontroller" }
   }
 }
