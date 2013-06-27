@@ -15,7 +15,7 @@ class raid::hardware::hp {
   package { 'hpacucli':
     provider => dpkg,
     ensure => latest,
-    source => "/tmp/hpacucli.deb",
+    source => "/opt/hpacucli.deb",
     require => File['/opt', '/opt/hpacucli.deb']
   }
 }
