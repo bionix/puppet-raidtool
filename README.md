@@ -35,6 +35,7 @@ Support Hardware
 * Adaptec RAID controller
 * 3ware RAID controller
 * LSI RAID controller
+* Compaq / Hewlett-Packard RAID controller
 
 
 Dependencies
