@@ -1,4 +1,4 @@
-class raid::hardware::aac {
+class raid::aac {
   package { 'libstdc++5':
     ensure => latest
   }

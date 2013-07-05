@@ -1,4 +1,4 @@
-class raid::hardware::threeware {
+class raid::threeware {
   file { '/usr/sbin/tw_cli':
     ensure => present,
     source => "puppet:///modules/raidtool/threeware/tw_cli",

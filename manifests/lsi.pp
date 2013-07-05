@@ -1,4 +1,4 @@
-class raidtool::hardware::lsi {
+class raidtool::lsi {
   file { '/opt':
     ensure => directory
   }
