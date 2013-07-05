@@ -5,7 +5,7 @@ class raid::aac {
 
   file { '/usr/sbin/arcconf':
     ensure => present,
-    source => "puppet:///modules/raidtool/arcconf/arcconf",
+    source => 'puppet:///modules/raidtool/arcconf/arcconf',
     owner => root,
     group => root,
     mode => 0555,

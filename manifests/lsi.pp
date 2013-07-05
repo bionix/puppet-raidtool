@@ -4,15 +4,15 @@ class raidtool::lsi {
   }
   file { '/opt/megacli.deb':
     ensure => present,
-    source => "puppet:///modules/raidtool/lsi/megacli_8.07.10-2_all.deb",
+    source => 'puppet:///modules/raidtool/lsi/megacli_8.07.10-2_all.deb',
     owner => root,
     group => root,
     mode => 0550,
     require => File['/opt']
   }
-  package { "megacli":
+  package { 'megacli':
     ensure  =>  latest,
-    source => "/opt/megacli.deb",
+    source => '/opt/megacli.deb',
     provider => dpkg,
     require => File['/opt', '/opt/megacli.deb']
   }
@@ -30,7 +30,7 @@ class raidtool::lsi {
       }
     }
     default: {
-      notice "Unsupported architecture - $::architecture"
+      notice 'Unsupported architecture - $::architecture'
     }
   }
 }
