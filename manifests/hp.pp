@@ -1,4 +1,4 @@
-class raid::hardware::hp {
+class raid::hp {
   file { '/opt':
     ensure => directory
   }

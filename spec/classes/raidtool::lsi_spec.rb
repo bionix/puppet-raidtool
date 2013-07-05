@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'raidtool::hardware::lsi', :type => :class do
+describe 'raidtool::lsi', :type => :class do
 
   let(:facts) {
     {
@@ -9,12 +9,12 @@ describe 'raidtool::hardware::lsi', :type => :class do
   }
 
   it "should have a folder /opt on the machine 2" do
-    should contain_file('/opt').with( 
+    should contain_file('/opt').with(
      'ensure' => 'directory'
     )
   end
   it "should have the right debfile in /opt on the machine" do
-    should contain_file('/opt/megacli.deb').with( 
+    should contain_file('/opt/megacli.deb').with(
      'ensure' => 'present',
      'owner' => 'root',
      'group' => 'root',
