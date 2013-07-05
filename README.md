@@ -3,6 +3,10 @@ puppet-raidtool
 
 A puppet module to install the raid controller depends cli binary
 
+[![Build Status][1]][2]
+
+[1]: https://secure.travis-ci.org/bionix/puppet-raidtool.png
+[2]: http://travis-ci.org/bionix/puppet-raidtool
 
 Overview
 --------
