@@ -6,13 +6,13 @@ A puppet module to install the raid controller depends cli binary
 branch 'master':
 [![Build Status][1]][2]
 
-[1]: https://secure.travis-ci.org/bionix/puppet-raidtool.png
+[1]: https://secure.travis-ci.org/bionix/puppet-raidtool.png?branch=master
 [2]: http://travis-ci.org/bionix/puppet-raidtool?branch=master
 
 branch 'dev':
 [![Build Status][3]][4]
 
-[3]: https://secure.travis-ci.org/bionix/puppet-raidtool.png
+[3]: https://secure.travis-ci.org/bionix/puppet-raidtool.png?branch=dev
 [4]: http://travis-ci.org/bionix/puppet-raidtool?branch=dev
 
 
